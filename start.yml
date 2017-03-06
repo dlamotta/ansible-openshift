@@ -1,0 +1,8 @@
+- name: Starts the OpenShift service
+  hosts: all
+  remote_user: ec2-user
+  tasks:
+  - name: Start atomic-openshift-master service
+    service:
+      name: atomic-openshift-master
+      state: started
