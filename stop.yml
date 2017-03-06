@@ -1,5 +1,5 @@
 - name: Stops the OpenShift service
-  hosts: openshift.tmp.chat
+  hosts: all
   remote_user: ec2-user
   tasks:
   - name: Stop atomic-openshift-master service
